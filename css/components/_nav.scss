@@ -1,0 +1,180 @@
+/* HEADER */
+@use '../base/gral-styles' as *;
+.headerContainer {
+    padding: $gral-padding;
+    position: fixed;
+    z-index: 99;
+    background-color: #0c061d;
+    width: 100%;
+    top: 0;
+
+    @media all and (max-width: 1024px) {
+        padding: 1%;
+    }
+    @media all and (max-width: 768px) {
+        padding: 2% 2% 0.2% 2%;
+    }
+
+    .navWrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .navLogo {
+            width: 8rem;
+            @media all and (max-width: 1024px) {
+                width: 13vw;
+            }
+            @media all and (max-width: 768px) {
+                width: 21vw;
+            }
+            @media all and (max-width: 480px) {
+                width: 26vw;
+            }
+
+            &:hover {
+                box-shadow: -1px -4px 35px -16px rgba(255, 255, 255, 1);
+                transition: ease 0.5s;
+                transform: scale(1.05, 1.05);
+            }
+            a {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .navBurguerMenu {
+            display: none;
+            @media all and (max-width: 768px) {
+                display: block;
+            }
+
+            .btnBurguer {
+                font-size: 6vw;
+                position: absolute;
+                z-index: 1;
+                right: 2%;
+                color: $gral-white;
+
+                @media all and (max-width: 768px) {
+                    font-size: 8vw;
+                }
+                @media all and (max-width: 480px) {
+                    font-size: 9vw;
+                }
+            }
+        }
+        .navMenuWrapper {
+            display: flex;
+            align-items: center;
+            @media all and (max-width: 768px) {
+                display: none;
+            }
+            .navItem {
+                cursor: pointer;
+                text-align: center;
+                @media all and (max-width: 768px) {
+                    padding: 1.8% 0rem 1.8% 0rem;
+                    width: 80%;
+                    text-align: center;
+                    font-size: 1.3rem;
+                    border-bottom: 1px #d1d1d1 solid;
+                }
+
+                .navLink {
+                    color: $gral-white;
+                    font-weight: 600;
+                    padding: 0.2rem;
+                    margin: 0rem 0.4rem;
+                    font-size: 1.2vw;
+                    @media all and (max-width: 1024px) {
+                        font-size: 1.4vw;
+                    }
+                    @media all and (max-width: 768px) {
+                        color: $gral-white;
+                        font-weight: 600;
+                        font-size: 3vw;
+                    }
+                    @media all and (max-width: 480px) {
+                        font-size: 1.5vw;
+                    }
+                    &:last-of-type {
+                        @media all and (max-width: 1024px) {
+                            margin-right: 1rem;
+                        }
+                    }
+                    &:hover {
+                        color: #a80070;
+                        transition: all 1s ease;
+                    }
+                    &:active {
+                        color: #a80070;
+                    }
+                }
+            }
+            /*drop down careers and courses*/
+            .navItem.navItemCareers .careersList {
+                display: none;
+            }
+            .navItem.navItemCourses .coursesList {
+                display: none;
+            }
+            .navItem.enter {
+                margin-left: 1rem;
+            }
+            .navItem.enter,
+            .navItem.login {
+                border: #f6f2f5 solid 2px;
+                margin-left: 0.5rem;
+                @media all and (max-width: 768px) {
+                    border: none;
+                    border-bottom: 1px #d1d1d1 solid;
+                }
+
+                &:hover {
+                    /* border: #a80070 solid 2px; */
+                    animation-name: niceBorder;
+                    animation-duration: 1.5s;
+                    animation-fill-mode: forwards;
+                    /* transition: all 1s ease; */
+
+                    @keyframes niceBorder {
+                        0% {
+                            border-left: #a80070 solid 2px;
+                        }
+                        33% {
+                            border-top: #a80070 solid 2px;
+                        }
+                        66% {
+                            border-right: #a80070 solid 2px;
+                        }
+                        99% {
+                            border-bottom: #a80070 solid 2px;
+                        }
+                        100% {
+                            border: #a80070 solid 2px;
+                        }
+                    }
+                }
+            }
+        }
+        /*menu Mobile*/
+        .navMenuWrapper.open {
+            @media all and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                left: 0px;
+                height: 80vh;
+                padding: 10% 0% 0% 0%;
+                background: linear-gradient(
+                    180deg,
+                    rgba(82, 37, 189, 1) 0%,
+                    rgba(141, 120, 193, 1) 64%,
+                    rgba(196, 196, 196, 0.908000700280112) 99%
+                );
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+ font-family: Open Sans,sans-serif;
+ font-family: "Roboto", sans-serif;
+
+background: linear-gradient(4deg, rgba(82,37,189,1) 29%, rgba(0,0,0,1) 100%);
+
+#5225bd // violeta
+#d2008d
+
+f6f2f5 // background cards

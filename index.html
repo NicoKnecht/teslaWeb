@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/8d2a6304f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <header class="headerContainer">
+        <!--HACER DINAMICO CON JS-->
+        <nav class="navWrapper">
+            <div class="navLogo">
+                <a href="index.html"><img src="img/tesla.png" alt="logo tesla"></a>
+            </div>
+            <a class="navBurguerMenu" href="#"><i class="fas fa-bars btnBurguer"></i></a>
+            <ul class="navMenuWrapper ">
+                <li class="navItem navItemCareers">
+                    <a class="navLink" class="" href="careers.html">CARRERAS</a>
+                    <ul class="careersList">
+                        <li class="career">
+                            <a href="#">Metematicas</a>
+                        </li>
+                        <li class="career">
+                            <a href="#">Física</a>
+                        </li>
+                        <li class="career">
+                            <a href="#">Sistemas</a>
+                        </li>
+                        <li class="career">
+                            <a href="#">Diseño Multimedial</a>
+                        </li>
+                        <li class="career">
+                            <a href="#">Desarrollo de Videojuegos</a>
+                        </li>
+                        <li class="career">
+                            <a href="#">Automatiozación y Robótica</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navItem navItemCourses">
+                    <a class="navLink" href="courses.html">CURSOS</a>
+                    <ul class="coursesList">
+                        <li class="course">
+                            <a href="#">Front-end</a>
+                        </li>
+                        <li class="course">
+                            <a href="#">Back-end</a>
+                        </li>
+                        <li class="course">
+                            <a href="#">UI/UX</a>
+                        </li>
+                        <li class="course">
+                            <a href="#">Iot</a>
+                        </li>
+                        <li class="course">
+                            <a href="#">Marketing Digital</a>
+                        </li>
+                        <li class="course">
+                            <a href="#">Quehacer matemático</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="noDisponible.html">INSTITUCIONAL</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="noDisponible.html">EVENTOS</a>
+                </li>
+                <li class="navItem">
+                    <a class="navLink" href="noDisponible.html">BLOG</a>
+                </li>
+                <li class="navItem ">
+                    <a class="navLink" href="contact.html">CONTACTO</a>
+                </li>
+                <li class="navItem enter">
+                    <a class="navLink" href="#">Ingresá</a>
+                </li>
+                <li class="navItem login">
+                    <a class="navLink" class="lastItem" href="#">Registrate</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainWrapper">
+        <section class="heroWrapper">
+            <div class="heroTitle">
+                <h1 class="title">Aprende ciencia, tecnología y diseño</h1>
+                <p class="heroDescription">
+                    Formación, especialización y práctica continua en física, matemática, nuevas tecnologías, diseño
+                    multimedial y más a travéz de trayectos educativos presenciales, online y vía streaming.
+                </p>
+            </div>
+        </section>
+        <section class="btnCoursesCareers">
+            <div class="careers">
+                <a href="careers.html" class="btn">Carreras</a>
+            </div>
+            <div class="courses">
+                <a href="courses.html" class="btn">Cursos</a>
+            </div>
+        </section>
+        <!--Carrousel-->
+        <section class="bannerContainer">
+            <div class="bannerWrapper">
+                <div class="banner" id="slide1">
+                    <a class="bannerLink" href="noDisponible.html" target="_blank">
+                        <img class="banner" src="img/banner-evento.jpg" alt="banner evento 'ciencia ficcion y física'">
+                    </a>
+
+                </div>
+                <div class="banner" id="slide2">
+                    <a href="noDisponible.html" target="_blank" class="bannerLink">
+                        <img class="bannerImg" src="img/banner-evento2.jpg"
+                            alt="banner evento 'las matematicas se crean o se descubren'">
+
+                    </a>
+                </div>
+            </div>
+            <ul class="menu">
+                <li class="slide1"><a href="#slide1" class="s1">1</a></li>
+                <li class="slide1"><a href="#slide2" class="s1">2</a></li>
+            </ul>
+
+        </section>
+
+        <!--Blog-->
+        <section class="cardsContainer">
+            <h2 class="cardsMainTitle">BLOG</h2>
+            <div class="cardsWrapper">
+                <a class="card" href="noDisponible.html" target="_blank">
+                    <div class="cardImg">
+                        <img src="img/telescopio.jpeg" alt="articulo" class="img">
+                    </div>
+                    <div class="cardTitle">
+                        <h3 class="title">
+                            El mapa de galaxias mas grande
+                        </h3>
+                    </div>
+                </a>
+                <a class="card" href="noDisponible.html" target="_blank">
+                    <div class="cardImg">
+                        <img src="img/calculadora.jpg" alt="articulo" class="img">
+                    </div>
+                    <div class="cardTitle">
+                        <h3 class="title">
+                            Más razonamiento menos calculo a mano
+                        </h3>
+                    </div>
+                </a>
+                <a class="card" href="noDisponible.html" target="_blank">
+                    <div class="cardImg">
+                        <img src="img/tendenciasWeb.jpg" alt="articulo" class="img">
+                    </div>
+                    <div class="cardTitle">
+                        <h3 class="title">
+                            Tendencias diseño web 2021
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            <div class="blogButtonWrapper">
+                <button class="blogButton"><a class="btn" href="noDisponible.html" target="_blank">Ver Todo</a>
+                </button>
+            </div>
+        </section>
+        <section class="videoContainer">
+            <div class="videoWrapper">
+                <iframe src="https://www.youtube.com/embed/pP3Aa8u7Lxc" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!--Brands-->
+        <section class="brandsContainer">
+
+            <div class="brandsWrapper">
+                <div class="brandsTitle">
+                    <h3 class="title">Confían en nosotros</h3>
+                </div>
+                <img src="img/meli.png" alt="logo mercado libre" class="brands">
+                <img src="img/despegar.png" alt="logo despegar" class="brands">
+                <img src="img/globant.png" alt="logo globant" class="brands">
+                <img src="img/etermax.png" alt="logo etermax" class="brands">
+                <img src="img/acenture.png" alt="logo accenture" class="brands">
+                <img src="img/conicet.png" alt="logo conicet" class="brands">
+                <img src="img/planetario.png" alt="logo planmetario" class="brands">
+                <img src="img/amautas-favicon.png" alt="logo amautas" class="brands">
+                <img src="img/claro.png" alt="loco claro" class="brands">
+                <img src="img/Logo-FUNDAV.png" alt="logo fundav" class="brands">
+            </div>
+
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="logoLocationWrapper">
+            <a href="index.html" class="logoFooterLink">
+                <img src="img/tesla2.png" alt="logo tesla footer" class="logoFooter">
+            </a>
+            <p class="legal">©2021 TESLA</p>
+            <a class="locationWrapper" href="https://goo.gl/maps/kPQ1UhNFViuuuidS8" target="_blank">
+                <img class="mapIcon" src="img/mapa.png" alt="icono de mapa">
+                <p class="location">Calle falsa 123/9 - CABA</p>
+            </a>
+        </div>
+        <div class="redesWrapper">
+            <a class="linkImg" href="https://discord.com/" target="_blank">
+                <img class="netImg" src="img/discord.png" alt="logo discord">
+            </a>
+            <a class=" linkImg" href="https://www.linkedin.com/" target="_blank">
+                <img class="netImg" src="img/linkedin (2).png" alt="linkedin logo">
+            </a>
+            <a class="linkImg" href="https://www.facebook.com/" target="_blank">
+                <img class="netImg" src="img/facebook.png" alt="facebook logo">
+            </a>
+            <a class="linkImg" href="https://www.instagram.com/" target="_blank">
+                <img class="netImg" src="img/instagram.png" alt="instagram logo">
+            </a>
+            <a class="linkImg" href="https://www.youtube.com/" target="_blank">
+                <img class="netImg" src="img/youtube.png" alt="youtube logo">
+            </a>
+        </div>
+
+
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+@use '../base/gral-styles' as *;
+
+.mainContainer {
+    // .heroWrapper {
+    //     background-image: url(../../img/universoRosa.jpg);
+    //     background-position: top;
+    //     background-size: cover;
+    //     height: 40vh;
+    //     @include center(row);
+    //     .heroTitle {
+    //         color: $gral-white;
+    //         @media all and (max-width: 768px) {
+    //             font-size: 5vw;
+    //         }
+    //     }
+    // }
+    .careersContainer {
+        padding: $gral-padding;
+        @media all and (max-width: 768px) {
+            padding: $mobile-padding;
+        }
+        .aboutCareersWrapper {
+            .titleWrapper {
+                margin: 2% 0%;
+                text-align: center;
+                font-size: 1.4rem;
+                .title {
+                    font-weight: 600;
+                    @media all and (max-width: 480px) {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+            .descriptionWrapper {
+                @include center(column);
+                text-align: center;
+                font-size: 1.2rem;
+                margin-bottom: 5%;
+                .description {
+                    width: 60%;
+                    line-height: 1.2rem;
+                    @media all and (max-width: 768px) {
+                        width: 100%;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+    .licCardsWrapper {
+        text-align: center;
+        .licCardsTitle {
+            @media all and (max-width: 480px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .techCardsWrapper {
+        text-align: center;
+        .techCardsTitle {
+            @media all and (max-width: 480px) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

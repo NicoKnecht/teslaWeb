@@ -1,0 +1,20 @@
+@use '../base/gral-styles' as *;
+
+.heroWrapper {
+    background-image: url(../../img/universoRosa.jpg); //carreras
+    background-position: top;
+    background-size: cover;
+    height: 40vh;
+    @include center(row);
+
+    &.courses {
+        // cursos
+        background-image: url(../../img/galaxia.jpg);
+    }
+    .heroTitle {
+        color: $gral-white;
+        @media all and (max-width: 768px) {
+            font-size: 5.5vw;
+        }
+    }
+}

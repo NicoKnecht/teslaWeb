@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-end</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/generalStyles.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/course.css">
+    <script src="https://kit.fontawesome.com/8d2a6304f1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="headerContainer">
+        <nav class="navWrapper">
+            <div class="logo">
+                <a href="index.html"><img src="img/tesla.png" alt="logo tesla"></a>
+            </div>
+            <ul class="menuWrapper ">
+                <li class="item">
+                    <a href="careers.html">CARRERAS</a>
+                </li>
+                <li class="item">
+                    <a href="courses.html">CURSOS</a>
+                </li>
+                <li class="item">
+                    <a href="noDisponible.html">INSTITUCIONAL</a>
+                </li>
+                <li class="item">
+                    <a href="noDisponible.html">EVENTOS</a>
+                </li>
+                <li class="item">
+                    <a href="noDisponible.html">BLOG</a>
+                </li>
+                <li class="item ">
+                    <a class="lastItem" href="contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <!--menu mobile-->
+            <div class="menuContainer">
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fas fa-bars btnBurguer"></i>
+                </label>
+                <!--por el id y el for, al precionar la img, cambaira el check( checked)-->
+                <ul class="menuMobWrapper ">
+                    <li class="itemMob">
+                        <a href="careers.html">CARRERAS</a>
+                    </li>
+                    <li class="itemMob">
+                        <a href="courses.html">CURSOS</a>
+                    </li>
+                    <li class="itemMob">
+                        <a href="noDisponible.html">INSTITUCIONAL</a>
+                    </li>
+                    <li class="itemMob">
+                        <a href="noDisponible.html">EVENTOS</a>
+                    </li>
+                    <li class="itemMob">
+                        <a href="noDisponible.html">BLOG</a>
+                    </li>
+                    <li class="itemMob ">
+                        <a class="lastItem" href="contact.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="courseContainer">
+        <section class="heroWrapper">
+            <h1 class="mainTitle">
+                Desarrollo Front End
+            </h1>
+        </section>
+        <section class="courseDescription">
+            <h2 class="descTitle">
+                ¿QUE APRENDERÁS?
+            </h2>
+            <p class="description">
+                Aprende las tecnologías necesarias para crear y desarrollar aplicaciones y páginas web performantes y
+                con alto impacto visual
+
+                <span> Tecnologías: HTML, CSS, Javascript, React</span>
+            </p>
+        </section>
+        <section class="buttonsContainer">
+            <div class="buttonsWrapper">
+                <a href="noDisponible.html" class="button">Programa</a>
+            </div>
+            <div class="buttonsWrapper">
+                <a href="noDisponible.html" class="button">Inscribete Ahora</a>
+            </div>
+        </section>
+        <section class="faqsWrapper">
+            <h3 class="faqsTitle">FAQS</h3>
+            <ul class="faqsList">
+                <li class="faqsItem">
+                    <i class="fas fa-caret-right"></i>
+                    ¿Qué conocimientos y herramientas se requieren?
+                    <p class="faqsInformation">
+                        El ritmo de trabajo de este curso requiere:
+
+                        Manejo fluido en el trabajo con archivos y entornos operativos (Windows, Linux, Mac OS).
+                        Es recomendado haber tenido una primer experiencia básica en manejo de código HTML y CSS.
+                        Tiempo disponible para acompañar cada clase con prácticas y tareas especiales.
+                    </p>
+                </li>
+                <li class="faqsItem">
+                    <i class="fas fa-caret-right"></i>
+                    ¿ A quiénes va dirigido?
+                    <p class="faqsInformation">
+                        Este programa es ideal para toda persona interesada en comenzar una carrera profesional en
+                        programación y desarrollo de soluciones digitales: estudiantes, profesionales, emprendedores,
+                        etc.
+                    </p>
+                </li>
+                <li class="faqsItem">
+                    <i class="fas fa-caret-right"></i>
+                    ¿Qué conocimientos obtendrás en este curso?
+                    <p class="faqsInformation">
+                        La ruta de aprendizaje de Desarrollo front-end se divide en 8 meses.
+                        <span>
+                            (2 meses —> Diseño Web
+                            4 meses —> Programación Front End
+                            2 meses —> Front End Avanzado)
+                        </span>
+
+                        Además, tenemos distintas masterclass de desarrollo profesional durante el curso.
+
+                    </p>
+                </li>
+                <li class="faqsItem">
+                    <i class="fas fa-caret-right"></i>
+                    ¿Como aprenderé los conceptos?
+                    <p class="faqsInformation">
+                        El programa está fuertemente pensado hacia el aprendizaje por acción combinando clases
+                        teórico-prácticas, tareas, proyectos especiales y 4 jornadas intensivas de bootcamps de días
+                        sábados donde se ponen a prueba los conocimientos y se enseña a trabajar en equipos de
+                        proyectos.
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="logoLocationWrapper">
+            <a href="index.html" class="logoFooterLink">
+                <img src="img/tesla2.png" alt="logo tesla footer" class="logoFooter">
+            </a>
+            <p class="legal">©2021 TESLA</p>
+            <a class="locationWrapper" href="https://goo.gl/maps/kPQ1UhNFViuuuidS8" target="_blank">
+                <img class="mapIcon" src="img/mapa.png" alt="icono de mapa">
+                <p class="location">Calle falsa 123/9 - CABA</p>
+            </a>
+        </div>
+        <div class="redesWrapper">
+            <a class="linkImg" href="https://discord.com/" target="_blank">
+                <img class="netImg" src="img/discord.png" alt="logo discord">
+            </a>
+            <a class=" linkImg" href="https://www.linkedin.com/" target="_blank">
+                <img class="netImg" src="img/linkedin (2).png" alt="linkedin logo">
+            </a>
+            <a class="linkImg" href="https://www.facebook.com/" target="_blank">
+                <img class="netImg" src="img/facebook.png" alt="facebook logo">
+            </a>
+            <a class="linkImg" href="https://www.instagram.com/" target="_blank">
+                <img class="netImg" src="img/instagram.png" alt="instagram logo">
+            </a>
+            <a class="linkImg" href="https://www.youtube.com/" target="_blank">
+                <img class="netImg" src="img/youtube.png" alt="youtube logo">
+            </a>
+        </div>
+
+
+    </footer>
+
+
+</body>
+
+</html>
