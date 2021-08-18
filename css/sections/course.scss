@@ -1,0 +1,92 @@
+@use '../base/gral-styles' as *;
+
+.courseContainer {
+    .courseWrapper {
+        padding: $gral-padding;
+        @media all and (max-width: 780px) {
+            padding: $mobile-padding;
+        }
+        .courseDescription {
+            .descTitle {
+                text-align: center;
+                font-size: 1.4rem;
+                margin: 3% 0%;
+                @media all and (max-width: 480px) {
+                    font-size: 1.3rem;
+                }
+            }
+            .description {
+                line-height: 1.2rem;
+                text-align: center;
+                span {
+                    display: block;
+                    margin-top: 0.5rem;
+                }
+                @media all and (max-width: 768px) {
+                    font-size: 1rem;
+                    text-align: left;
+                }
+            }
+        }
+        /*buttons*/
+        .buttonsContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            column-gap: 10%;
+            row-gap: 5%;
+            margin: $gral-margin;
+            .buttonsWrapper {
+                .button {
+                    @include btn(8% 5%, 1.4rem);
+                }
+            }
+        }
+        /*FAQS*/
+        .faqsWrapper {
+            margin: $gral-margin;
+            color: #f6f2f5;
+            .faqsTitle {
+                font-size: 1.5rem;
+                margin: 0.5rem;
+            }
+            .faqsList {
+                .faqsItem {
+                    // margin: 0% 0%;
+                    cursor: pointer;
+                    .faqsSubtitle {
+                        font-size: 1.4rem;
+                        margin: 0.5rem 0rem;
+                        @media screen and (max-width: 480px) {
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .faqsInformation {
+                        display: none;
+                        font-size: 1rem;
+                        padding: 2%;
+
+                        span {
+                            display: block;
+                            margin: 0.5rem 0rem;
+                        }
+
+                        @media screen and (max-width: 480px) {
+                            font-size: 0.8rem;
+                            padding: 2%;
+                        }
+                    }
+                    .faqsInformation.open {
+                        display: block;
+                        border: solid $snd-black 2px;
+                        border-top: none;
+                        background: linear-gradient(
+                            180deg,
+                            rgba(82, 37, 189, 0.908000700280112) 1%,
+                            rgba(69, 69, 69, 0.9332107843137255) 99%
+                        );
+                    }
+                }
+            }
+        }
+    }
+}

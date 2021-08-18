@@ -1,0 +1,80 @@
+@use '../base/gral-styles' as *;
+
+.careerContainer {
+    .careerWrapper {
+        padding: $gral-padding;
+        @media all and (max-width: 780px) {
+            padding: $mobile-padding;
+        }
+        .careerDescription {
+            .descTitle {
+                text-align: center;
+                font-size: 1.4rem;
+                margin: 3% 0%;
+                @media all and (max-width: 480px) {
+                    font-size: 1.3rem;
+                }
+            }
+            .description {
+                line-height: 1.2rem;
+                text-align: center;
+                @media all and (max-width: 768px) {
+                    font-size: 1rem;
+                    text-align: left;
+                }
+            }
+        }
+        .buttonsContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            column-gap: 10%;
+            row-gap: 5%;
+            margin: $gral-margin;
+            .buttonsWrapper {
+                .button {
+                    @include btn(8% 5%, 1.4rem);
+                }
+            }
+        }
+        .cardsWrapper {
+            grid-template-columns: repeat(4, 1fr);
+            margin: $gral-margin;
+            gap: 1rem;
+            @media all and (max-width: 768px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @media all and (max-width: 480px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .card {
+                background-color: $snd-black;
+                display: grid;
+                grid-template-rows: 2fr 1fr 1fr;
+                .iconCard {
+                    width: 30%;
+                    margin: 0 auto;
+                    margin-top: 10%;
+                }
+                .cardTitle {
+                    text-align: center;
+                    font-size: 1.2rem;
+                    @media all and (max-width: 768px) {
+                        font-size: 3vw;
+                    }
+                    @media all and (max-width: 480px) {
+                        font-size: 4vw;
+                    }
+                }
+                .cardDesc {
+                    text-align: center;
+                    @media all and (max-width: 768px) {
+                        font-size: 2.9vw;
+                    }
+                    @media all and (max-width: 480px) {
+                        font-size: 3.5vw;
+                    }
+                }
+            }
+        }
+    }
+}

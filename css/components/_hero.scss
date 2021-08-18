@@ -4,12 +4,25 @@
     background-image: url(../../img/universoRosa.jpg); //carreras
     background-position: top;
     background-size: cover;
-    height: 40vh;
+    height: 45vh;
     @include center(row);
 
     &.courses {
         // cursos
-        background-image: url(../../img/galaxia.jpg);
+        background: $gral-black url(../../img/galaxia.jpg);
+    }
+    &.systems {
+        //sistemas
+        background: $gral-black url(../../img/sistemas2.jpg);
+        background-position: center;
+        background-blend-mode: difference;
+    }
+    &.frontend {
+        //frontend
+        background: $gral-black url(../../img/frontend2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-blend-mode: difference;
     }
     .heroTitle {
         color: $gral-white;

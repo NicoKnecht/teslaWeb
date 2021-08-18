@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 * {
-    border: solid red 1px;
+    // border: solid red 1px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,6 +16,8 @@ $mobile-padding: 1% 2% 1% 2%;
 $gral-margin: 5% 0% 5% 0%;
 $gral-white: #f0f0f0;
 $gral-magenta: #d2008d;
+$gral-black: #080808;
+$snd-black: #454545;
 
 //mixins
 @mixin center($orientation) {
