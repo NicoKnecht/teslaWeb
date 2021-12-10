@@ -1,0 +1,6 @@
+Aclaracion: Dado al uso de algunos elemento mas nuevos en Sass , el "Watch"
+de visual studio code  no transpila scss a css por lo tanto hay que hacerlo
+por consola:
+
+/c/xampp/htdocs/web/css (main)
+$ sass --watch styles.scss:styles.css

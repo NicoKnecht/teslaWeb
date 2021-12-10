@@ -1,7 +1,7 @@
-@use '../base/gral-styles' as *;
+@use "../base/gral-styles" as *;
 
 .heroWrapper {
-    background-image: url(../../img/universoRosa.jpg); //carreras
+    background-image: $gral-black url(../../img/universoRosa.jpg); //carreras
     background-position: top;
     background-size: cover;
     height: 45vh;
@@ -9,17 +9,17 @@
 
     &.courses {
         // cursos
-        background: $gral-black url(../../img/galaxia.jpg);
+        background-image: $gral-black url(../../img/galaxia.jpg);
     }
     &.systems {
         //sistemas
-        background: $gral-black url(../../img/sistemas2.jpg);
+        background-image: $gral-black url(../../img/sistemas2.jpg);
         background-position: center;
         background-blend-mode: difference;
     }
     &.frontend {
         //frontend
-        background: $gral-black url(../../img/frontend2.jpg);
+        background-image: $gral-black url(../../img/frontend2.jpg);
         background-position: center;
         background-size: cover;
         background-blend-mode: difference;
