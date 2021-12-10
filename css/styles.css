@@ -286,7 +286,7 @@ body {
 }
 
 .heroWrapper {
-  background-image: #080808 url(../../img/universoRosa.jpg);
+  background: #080808 url(../../img/universoRosa.jpg);
   background-position: top;
   background-size: cover;
   height: 45vh;
@@ -296,15 +296,15 @@ body {
   flex-direction: row;
 }
 .heroWrapper.courses {
-  background-image: #080808 url(../../img/galaxia.jpg);
+  background: #080808 url(../../img/galaxia.jpg);
 }
 .heroWrapper.systems {
-  background-image: #080808 url(../../img/sistemas2.jpg);
+  background: #080808 url(../../img/sistemas2.jpg);
   background-position: center;
   background-blend-mode: difference;
 }
 .heroWrapper.frontend {
-  background-image: #080808 url(../../img/frontend2.jpg);
+  background: #080808 url(../../img/frontend2.jpg);
   background-position: center;
   background-size: cover;
   background-blend-mode: difference;
